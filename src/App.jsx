@@ -5,6 +5,7 @@ import { CursorGlow, Nav, ScrollProgress } from './components/Chrome'
 import Hero from './components/Hero'
 import About from './components/About'
 import Highlights from './components/Highlights'
+import DesignSystem from './components/DesignSystem'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
@@ -21,6 +22,7 @@ export default function App() {
         <Hero />
         <About />
         <Highlights />
+        <DesignSystem />
         <Experience />
         <Skills />
         <Contact />

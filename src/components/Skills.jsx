@@ -44,7 +44,7 @@ export default function Skills() {
     <section id="skills" className="relative py-28 md:py-36">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <SectionHeading
-          index="04"
+          index="05"
           eyebrow="Skills"
           title={
             <>
