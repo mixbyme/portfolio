@@ -1,19 +1,53 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { Accessibility, ArrowUpRight, Package, Palette, Puzzle } from 'lucide-react'
+import { Accessibility, ArrowUpRight, Moon, Package, Palette, Puzzle, Sun } from 'lucide-react'
 import { designSystem as ds } from '../data/resume'
 import { GithubIcon, Reveal, SectionHeading, SpotlightCard, Tag } from './ui'
 
 const icons = { palette: Palette, a11y: Accessibility, package: Package, puzzle: Puzzle }
 
+const themes = [
+  { value: 'light', label: '라이트', Icon: Sun, frame: 'bg-white' },
+  { value: 'dark', label: '다크', Icon: Moon, frame: 'bg-[#0b1120]' },
+]
+
+function ThemeSwitch({ theme, onChange }) {
+  return (
+    <div role="radiogroup" aria-label="미리보기 테마" className="ml-auto flex shrink-0 gap-0.5 rounded-full border border-line bg-white/[0.03] p-0.5">
+      {themes.map(({ value, label, Icon }) => (
+        <button
+          key={value}
+          role="radio"
+          aria-checked={theme === value}
+          aria-label={`${label} 테마로 보기`}
+          title={`${label} 테마`}
+          onClick={() => onChange(value)}
+          className={`relative rounded-full p-1.5 transition-colors ${theme === value ? 'text-white' : 'text-zinc-500 hover:text-zinc-200'}`}
+        >
+          {theme === value && (
+            <motion.span
+              layoutId="ds-theme-pill"
+              className="absolute inset-0 -z-10 rounded-full bg-white/12"
+              transition={{ type: 'spring', stiffness: 380, damping: 32 }}
+            />
+          )}
+          <Icon size={14} />
+        </button>
+      ))}
+    </div>
+  )
+}
+
 function Preview() {
   const [active, setActive] = useState(0)
+  const [theme, setTheme] = useState('dark')
   const current = ds.components[active]
+  const frame = themes.find((t) => t.value === theme).frame
 
   return (
     <SpotlightCard className="overflow-hidden">
       {/* 브라우저 창 상단 */}
-      <div className="flex items-center gap-3 border-b border-line px-5 py-3.5">
+      <div className="flex items-center gap-3 border-b border-line px-5 py-3">
         <div className="flex gap-1.5" aria-hidden>
           <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
           <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
@@ -22,6 +56,7 @@ function Preview() {
         <span className="truncate rounded-full bg-white/[0.04] px-3 py-1 font-mono text-[11px] text-zinc-500">
           module-design-system.vercel.app
         </span>
+        <ThemeSwitch theme={theme} onChange={setTheme} />
       </div>
 
       {/* 컴포넌트 선택 */}
@@ -49,12 +84,16 @@ function Preview() {
       </div>
 
       {/* 캡처 이미지 */}
-      <div role="tabpanel" aria-label={current.name} className="relative mx-5 mt-4 aspect-[4/3] overflow-hidden rounded-2xl border border-line bg-[#0b1120]">
+      <div
+        role="tabpanel"
+        aria-label={current.name}
+        className={`relative mx-5 mt-4 aspect-[4/3] overflow-hidden rounded-2xl border border-line transition-colors duration-500 ${frame}`}
+      >
         <AnimatePresence mode="wait" initial={false}>
           <motion.img
-            key={current.name}
-            src={current.image}
-            alt={`${current.name} 컴포넌트 화면`}
+            key={`${theme}-${current.name}`}
+            src={`/projects/design-system/${theme}/${current.file}`}
+            alt={`${current.name} 컴포넌트 화면 (${theme === 'dark' ? '다크' : '라이트'} 테마)`}
             loading="lazy"
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}

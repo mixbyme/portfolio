@@ -33,7 +33,7 @@
 | **Hero** | 이름과 직함, 한 줄 소개 |
 | **About** | 숫자로 보는 경력, 핵심 역량 4가지, 일하는 방식 |
 | **Highlights** | 임팩트가 컸던 대표 프로젝트 4개 |
-| **Design System** | 직접 만든 React 컴포넌트 디자인 시스템. 컴포넌트 미리보기와 Storybook·GitHub 링크 |
+| **Design System** | 직접 만든 React 컴포넌트 디자인 시스템. 라이트/다크 전환 가능한 컴포넌트 미리보기와 Storybook·GitHub 링크 |
 | **Experience** | 회사별 경력 타임라인. 누르면 프로젝트 상세와 사용 기술이 펼쳐짐 |
 | **Skills** | 기술 스택, 학력, 자격증, 어학, 교육 이력 |
 | **Contact** | 이메일, GitHub |

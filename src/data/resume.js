@@ -269,22 +269,23 @@ export const philosophy = [
 export const designSystem = {
   name: 'module-design-system',
   summary:
-    'React 프로젝트에 바로 붙여 쓰는 컴포넌트 디자인 시스템입니다. 디자인 토큰 하나로 브랜드와 다크 테마를 바꾸고, Storybook에서 모든 컴포넌트를 직접 조작해 볼 수 있습니다.',
+    'React 프로젝트에 바로 붙여 쓰는 컴포넌트 디자인 시스템입니다. 디자인 토큰으로 브랜드를 바꾸고 라이트·다크·시스템 테마를 고를 수 있으며, Storybook에서 모든 컴포넌트를 직접 조작해 볼 수 있습니다.',
   storybook: 'https://module-design-system.vercel.app',
   repo: 'https://github.com/mixbyme/module-design-system',
   points: [
-    { icon: 'palette', title: '디자인 토큰', desc: '색·간격·모서리를 CSS 변수로 분리해, 변수만 바꾸면 브랜드 테마와 다크 모드가 적용됩니다.' },
+    { icon: 'palette', title: '디자인 토큰 · 테마', desc: '색·간격·모서리를 CSS 변수로 분리했습니다. ThemeProvider로 라이트·다크·시스템 테마를 고르고, 변수만 바꾸면 브랜드 테마가 적용됩니다.' },
     { icon: 'a11y', title: '접근성 기본 탑재', desc: '키보드 조작, 포커스 관리, ARIA 속성을 모든 컴포넌트에 기본으로 넣었습니다.' },
-    { icon: 'package', title: '의존성 없는 경량 번들', desc: 'React 외 런타임 라이브러리 없이 JS 18KB, CSS 16KB로 빌드됩니다.' },
+    { icon: 'package', title: '의존성 없는 경량 번들', desc: 'React 외 런타임 라이브러리 없이 JS 22KB, CSS 18KB로 빌드됩니다.' },
     { icon: 'puzzle', title: '확장 가능한 API', desc: '조합형 컴포넌트, render 함수, className·ref 전달로 프로젝트에 맞게 확장합니다.' },
   ],
   components: [
-    { name: 'Calendar', image: '/projects/design-system/calendar.png', desc: '날짜·기간 선택, 키보드 이동, 일정 표시' },
-    { name: 'Table', image: '/projects/design-system/table.png', desc: '정렬, 행 선택, 셀 직접 그리기' },
-    { name: 'MessageBox', image: '/projects/design-system/messagebox.png', desc: '확인/취소 모달, 4가지 톤, 비동기 확인' },
-    { name: 'Tabs', image: '/projects/design-system/tabs.png', desc: 'line·pill 모양, 화살표 키 이동' },
-    { name: 'Button', image: '/projects/design-system/button.png', desc: '4가지 스타일, 3가지 크기, 로딩' },
-    { name: 'Checkbox', image: '/projects/design-system/checkbox.png', desc: '일부 선택 상태, 설명·오류 표시' },
+    { name: 'Calendar', file: 'calendar.png', desc: '날짜·기간 선택, 키보드 이동, 일정 표시' },
+    { name: 'ThemeToggle', file: 'theme.png', desc: '라이트·시스템·다크 선택, 선택 기억, 영역별 테마' },
+    { name: 'Table', file: 'table.png', desc: '정렬, 행 선택, 셀 직접 그리기' },
+    { name: 'MessageBox', file: 'messagebox.png', desc: '확인/취소 모달, 4가지 톤, 비동기 확인' },
+    { name: 'Tabs', file: 'tabs.png', desc: 'line·pill 모양, 화살표 키 이동' },
+    { name: 'Button', file: 'button.png', desc: '4가지 스타일, 3가지 크기, 로딩' },
+    { name: 'Checkbox', file: 'checkbox.png', desc: '일부 선택 상태, 설명·오류 표시' },
   ],
   tags: ['React 19', 'TypeScript', 'Storybook', 'Design Tokens', 'A11y', 'Vite'],
 }
