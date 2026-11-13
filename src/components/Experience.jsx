@@ -115,7 +115,7 @@ export default function Experience() {
     <section id="experience" className="relative px-5 py-28 md:px-8 md:py-36">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
-          index="03"
+          index="04"
           eyebrow="Experience"
           title={
             <>
