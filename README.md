@@ -6,7 +6,7 @@
 
 많은 사람이 쓰는 서비스를, 누구나 편하게 쓸 수 있도록.
 
-### 🔗 [portfolio-bice-one-9wk02cnpv5.vercel.app](https://portfolio-bice-one-9wk02cnpv5.vercel.app)
+### 🔗 [mixbyme-portfolio.vercel.app](https://mixbyme-portfolio.vercel.app)
 
 ![React](https://img.shields.io/badge/React_19-20232A?logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite_8-646CFF?logo=vite&logoColor=white)
