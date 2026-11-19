@@ -8,6 +8,7 @@ const links = [
   { id: 'about', label: 'About' },
   { id: 'highlights', label: 'Highlights' },
   { id: 'design-system', label: 'Design System' },
+  { id: 'webcity', label: 'WebCity' },
   { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Skills' },
   { id: 'contact', label: 'Contact' },

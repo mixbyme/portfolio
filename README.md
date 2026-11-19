@@ -34,6 +34,7 @@
 | **About** | 숫자로 보는 경력, 핵심 역량 4가지, 일하는 방식 |
 | **Highlights** | 임팩트가 컸던 대표 프로젝트 4개 |
 | **Design System** | 직접 만든 React 컴포넌트 디자인 시스템. 라이트/다크 전환 가능한 컴포넌트 미리보기와 Storybook·GitHub 링크 |
+| **WebCity** | Three.js로 만든 3D 도시 건설 게임 사이드 프로젝트. 낮·밤·사계절 등 장면별 캡처 갤러리와 [플레이 링크](https://mixbyme-webcity.vercel.app) |
 | **Experience** | 회사별 경력 타임라인. 누르면 프로젝트 상세와 사용 기술이 펼쳐짐 |
 | **Skills** | 기술 스택, 학력, 자격증, 어학, 교육 이력 |
 | **Contact** | 이메일, GitHub |
@@ -91,6 +92,8 @@ src/
 │   ├── Hero.jsx          # 메인 화면
 │   ├── About.jsx         # 경력 지표, 핵심 역량
 │   ├── Highlights.jsx    # 대표 프로젝트
+│   ├── DesignSystem.jsx  # 디자인 시스템 소개
+│   ├── WebCity.jsx       # WebCity(3D 도시 건설 게임) 소개
 │   ├── Experience.jsx    # 경력 타임라인
 │   ├── Skills.jsx        # 기술 스택, 학력, 자격증
 │   ├── Contact.jsx       # 연락처, 푸터

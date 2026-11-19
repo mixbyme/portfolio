@@ -289,3 +289,27 @@ export const designSystem = {
   ],
   tags: ['React 19', 'TypeScript', 'Storybook', 'Design Tokens', 'A11y', 'Vite'],
 }
+
+export const webCity = {
+  name: 'WebCity',
+  summary:
+    '브라우저에서 바로 플레이하는 아기자기한 3D 도시 건설 게임 프로토타입입니다. 도로를 깔고 구역을 지정하면 공사가 시작되고, 사람과 건물이 모일수록 동네가 자라며 낮과 밤, 사계절이 흘러갑니다. Claude Code와 함께 아이디어를 바로 기능으로 옮기며 만들었습니다.',
+  play: 'https://mixbyme-webcity.vercel.app',
+  points: [
+    { icon: 'hammer', title: '공사부터 완공까지', desc: '모든 건물이 비계·크레인과 진행 막대를 거쳐 지어지고, 주변에 건물과 사람이 모이면 주택 → 아파트 → 고층 빌딩으로 커집니다.' },
+    { icon: 'building', title: '합쳐지는 건물', desc: '붙어 있는 집과 상가가 2칸·ㄱ자·2×2로 묶여 코티지, 저택, 카페, 마트, 쇼핑몰 같은 큰 건물이 됩니다.' },
+    { icon: 'car', title: '부딪히지 않는 교통', desc: '자동차가 둥근 도로를 따라 달리고, 교차로는 한 대씩, 꼬리 물기 없이 지나갑니다. 공원에서는 사람들이 뛰어놉니다.' },
+    { icon: 'season', title: '시간과 계절', desc: '24시간 낮과 밤, 별·달·별똥별, 벚꽃·단풍·눈이 내리는 사계절을 셰이더와 파티클로 표현했습니다.' },
+  ],
+  shots: [
+    { name: '낮', file: 'hero.jpg', desc: '도로·주거·상업·공업·공원이 어우러진 도시' },
+    { name: '밤', file: 'night.jpg', desc: '전기가 들어온 건물의 창문과 자동차 전조등' },
+    { name: '봄', file: 'spring.jpg', desc: '벚꽃이 핀 호수 공원' },
+    { name: '가을', file: 'autumn.jpg', desc: '단풍으로 물든 동네' },
+    { name: '겨울', file: 'winter.jpg', desc: '눈 덮인 도시와 내리는 눈' },
+    { name: '공원', file: 'park.jpg', desc: '붙여 지을수록 연못·시냇물이 생기는 공원' },
+    { name: '건물', file: 'buildings.jpg', desc: '저택, 코티지, ㄱ자 집, 아파트 단지' },
+    { name: '공사', file: 'construction.jpg', desc: '공사 현장과 진행 막대' },
+  ],
+  tags: ['Three.js', 'WebGL', 'GLSL', 'Vite', 'Vanilla JS', 'Claude Code'],
+}

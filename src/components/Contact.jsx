@@ -46,7 +46,7 @@ export default function Contact() {
       <div className="bg-grid pointer-events-none absolute inset-0 -z-10 [mask-image:linear-gradient(to_top,black,transparent_70%)]" />
 
       <div className="mx-auto max-w-6xl text-center">
-        <Reveal className="mb-6 font-mono text-xs tracking-[0.25em] text-accent uppercase">05 — Contact</Reveal>
+        <Reveal className="mb-6 font-mono text-xs tracking-[0.25em] text-accent uppercase">07 — Contact</Reveal>
         <Reveal delay={0.08} as="h2" className="font-display text-5xl leading-[1.05] font-bold tracking-tight text-white md:text-8xl">
           함께 만들 <br className="sm:hidden" />
           <span className="text-gradient">다음 서비스</span>
