@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { ArrowUpRight, Building2, Car, CloudSun, Hammer } from 'lucide-react'
+import { ArrowUpRight, Box, Building2, Car, CloudSun, Hammer } from 'lucide-react'
 import { webCity as wc } from '../data/resume'
 import { Reveal, SectionHeading, SpotlightCard, Tag } from './ui'
 
-const icons = { hammer: Hammer, building: Building2, car: Car, season: CloudSun }
+const icons = { hammer: Hammer, building: Building2, car: Car, season: CloudSun, export: Box }
 
 function Gallery() {
   const [active, setActive] = useState(0)

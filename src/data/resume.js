@@ -300,6 +300,7 @@ export const webCity = {
     { icon: 'building', title: '합쳐지는 건물', desc: '붙어 있는 집과 상가가 2칸·ㄱ자·2×2로 묶여 코티지, 저택, 카페, 마트, 쇼핑몰 같은 큰 건물이 됩니다.' },
     { icon: 'car', title: '부딪히지 않는 교통', desc: '자동차가 둥근 도로를 따라 달리고, 교차로는 한 대씩, 꼬리 물기 없이 지나갑니다. 공원에서는 사람들이 뛰어놉니다.' },
     { icon: 'season', title: '시간과 계절', desc: '24시간 낮과 밤, 별·달·별똥별, 벚꽃·단풍·눈이 내리는 사계절을 셰이더와 파티클로 표현했습니다.' },
+    { icon: 'export', title: '블렌더로 내보내기', desc: '내가 만든 도시를 glTF(.glb) 파일로 받아 블렌더에서 그대로 열 수 있습니다. 인스턴스 메시를 일반 메시로 풀고 색과 창문 텍스처까지 담았습니다.' },
   ],
   shots: [
     { name: '낮', file: 'hero.jpg', desc: '도로·주거·상업·공업·공원이 어우러진 도시' },
@@ -311,5 +312,5 @@ export const webCity = {
     { name: '건물', file: 'buildings.jpg', desc: '저택, 코티지, ㄱ자 집, 아파트 단지' },
     { name: '공사', file: 'construction.jpg', desc: '공사 현장과 진행 막대' },
   ],
-  tags: ['Three.js', 'WebGL', 'GLSL', 'Vite', 'Vanilla JS', 'Claude Code'],
+  tags: ['Three.js', 'WebGL', 'GLSL', 'glTF', 'Vite', 'Vanilla JS', 'Claude Code'],
 }
